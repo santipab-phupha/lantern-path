@@ -1,0 +1,12 @@
+# Lantern Path demo
+
+**Target runtime** — 2 minutes 15 seconds. Record the working app in a desktop browser. Start on a fresh load of Midnight Manor with the suggestion visible. Have the Kiro corner-clearance spec and its regression test open in a second window.
+
+| Time | Show on screen | Say |
+| --- | --- | --- |
+| 0:00–0:15 | Start on the manor. Point from the entrance along the amber route, ending at the reading-room door. | “Tonight there’s a reception at Midnight Manor. The reading-room door is open, but can a wheelchair guest actually reach it? Follow the amber line. The chair gets this far, and then the dining table cuts off the turn.” |
+| 0:15–0:38 | Show **Furniture suggestion**. Point to the table and its outlined destination. Click **Apply move**, wait for **Route found**, then click **Run simulation**. | “I built Lantern Path for the person arranging this room. It has tested a change: move this dining table two metres to the right. The outline shows exactly where. I’ll apply it and run the same chair through the new layout.” |
+| 0:38–1:00 | Keep the animation in view as the chair crosses the gallery, turns, and arrives. | “Watch the turn into the reading room. The planner checks the space the chair takes up as it rotates, including the clearance margin. Now our guest can get all the way to the destination in the simulation.” |
+| 1:00–1:27 | Choose **Book Fair**. Show **Route blocked**. Select **Table B** and press the right arrow four times. Wait for **Route found**. | “Here’s why measuring the aisles alone can be misleading. Both aisles are wider than this padded chair. The chair still needs room to swing around the corner. I can test my own change too. Four nudges move this table forty centimetres. That opens the turn.” |
+| 1:27–1:54 | Show `.kiro/specs/wheelchair-corner-clearance/tasks.md`, then the mid-arc case in `test/planner.test.js`. | “I used Kiro to specify and test that exact before-and-after case. This other test checks a turn where both end positions fit, yet the chair clips an obstacle halfway through. That test protects the behavior we just saw.” |
+| 1:54–2:15 | Return to the app and the successful route. Open **Wheelchair settings** to show the dimensions behind the result. | “Lantern Path brings furniture layout and motion planning into the same editor. A venue organizer can try a change on screen, see why it helps, and take a specific measurement back to the room.” |
